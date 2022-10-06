@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { ViewCommissionComponent } from './Agent/view-commission/view-commission.component';
+import { ViewAgentComponent } from './view-agent/view-agent.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ViewCommissionComponent } from './Agent/view-commission/view-commission
     HomeComponent,
     LoginComponent,
     AdminHomeComponent,
-    ViewCommissionComponent
+    ViewCommissionComponent,
+    ViewAgentComponent
   ],
   imports: [
     BrowserModule,
