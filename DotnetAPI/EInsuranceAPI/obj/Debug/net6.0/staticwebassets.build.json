@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "eyEIDyWKg9lA2BmrSUEUBOmLFfNZ0ieo7GlWmCHGtSY=",
+  "Source": "EInsuranceAPI",
+  "BasePath": "_content/EInsuranceAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
