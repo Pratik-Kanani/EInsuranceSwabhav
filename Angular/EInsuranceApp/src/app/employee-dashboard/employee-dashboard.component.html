@@ -1,0 +1,59 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color:#1d4e9e;">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Company logo -->
+                <li class="nav-brand">
+                    <a class="nav-link active" style="color: white;" aria-current="page" routerLink="/home">
+                    <img id="image" src="assets/homelogo.jpg" width="150" height="50"/></a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="/employee-dashboard" style="color: white;">Dashboard</a>
+                </li>
+
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" ngbDropdownToggle style="color: white;">
+                        Agent
+                    </a>
+                    <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="navbarScrollingDropdown">
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/agentRegistration">Add Agent</a></li>
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/view-agent">View Agent</a></li>
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/viewCommission">View Commisssion</a></li>
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/view-commision-withdrawals">View Commission Withdrawl</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" ngbDropdownToggle style="color: white;">
+                        Insurance
+                    </a>
+                    <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="navbarScrollingDropdown">
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/viewCustomer">View Customers</a></li>
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/view-insurance-account-detail">Insurance Account</a></li>
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/viewPolicyPay" >View Policy Payment</a></li>
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/viewPolicyClaim" >View Policy Claim</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a class="nav-link dropdown-toggle" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" ngbDropdownToggle style="color: white;">
+                        Account
+                    </a>
+                    <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="navbarScrollingDropdown">
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/employee-profile">Profile</a></li>
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="#">Change Password</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav- ">
+                       <a class="nav-link active" style="color: white;">Logout</a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+

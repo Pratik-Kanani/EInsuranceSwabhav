@@ -8,7 +8,10 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { ViewCommissionComponent } from './Agent/view-commission/view-commission.component';
+import { ViewCommisionWithdrawalsComponent } from './view-commision-withdrawals/view-commision-withdrawals.component';
 import { ViewAgentComponent } from './view-agent/view-agent.component';
+import { CustomerDashboardComponent } from './customer-dashboard/customer-dashboard.component';
+
 
 @NgModule({
   declarations: [
@@ -17,7 +20,9 @@ import { ViewAgentComponent } from './view-agent/view-agent.component';
     LoginComponent,
     AdminHomeComponent,
     ViewCommissionComponent,
-    ViewAgentComponent
+    ViewCommisionWithdrawalsComponent,
+    ViewAgentComponent,
+    CustomerDashboardComponent
   ],
   imports: [
     BrowserModule,

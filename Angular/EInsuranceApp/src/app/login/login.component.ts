@@ -10,6 +10,7 @@ export class LoginComponent implements OnInit {
 
   username:string="";
   password:string="";
+  userType:string="";
   LoginUser(){
     if(this.username=="admin"&& this.password=="admin"){
       alert("Login successful")
