@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color:#1d4e9e;">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-brand">
+                    <a class="nav-link active" style="color: white;" aria-current="page" routerLink="/home">
+                    <img src="assets/homelogo.jpg"  id="image" width="150" height="50"/></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" routerLink="#" style="color: white;">Account</a>
+                </li>
+
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a class="nav-link active dropdown-toggle" id="navbarScrollingDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false"
+                         ngbDropdownToggle style="color: white;">
+                        Customer Profile
+                    </a>
+                    <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="navbarScrollingDropdown">
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/customer-profile">Profile</a></li>
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/customer-document">Documents</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="#" 
+                    style="color: white;">Insurance Plans</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="/view-insurance-account-detail" 
+                    style="color: white;">Insurance Account</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="/Queries" 
+                    style="color: white;">Queries</a>
+                </li>
+
+                <li class="nav- ">
+                    <a class="nav-link active" style="color: white;">Logout</a>
+                 </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+

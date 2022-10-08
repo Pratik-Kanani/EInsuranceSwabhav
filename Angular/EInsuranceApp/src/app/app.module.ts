@@ -10,6 +10,7 @@ import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { ViewCommisionWithdrawalsComponent } from './view-commision-withdrawals/view-commision-withdrawals.component';
 import { ViewAgentComponent } from './view-agent/view-agent.component';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
+import { CustomerDashboardComponent } from './customer-dashboard/customer-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashbo
     AdminHomeComponent,
     ViewCommisionWithdrawalsComponent,
     ViewAgentComponent,
-    EmployeeDashboardComponent
+    EmployeeDashboardComponent,
+    CustomerDashboardComponent
   ],
   imports: [
     BrowserModule,
