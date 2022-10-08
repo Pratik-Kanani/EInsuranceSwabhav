@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\bin\\Debug\\net6.0",
+    "\\bin\\Release\\net6.0",
+    "\\Models",
+    "\\obj\\Release",
+    "\\obj\\Release\\net6.0"
+  ],
+  "SelectedNode": "\\Models\\UserContext.cs",
+  "PreviewInSolutionExplorer": false
+}
