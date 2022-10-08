@@ -109,3 +109,5 @@ bin/*
 obj/*
 .vscode/*
 .vs/*
+**/bin/*
+**/obj/*
