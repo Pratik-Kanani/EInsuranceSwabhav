@@ -1,0 +1,61 @@
+<h3 style="text-align:center;">Interest Calculator</h3>
+    <div class="row" style="width:70%; margin-left: 15%;">
+      <div class="col">
+        <input class="form-control" type="text" placeholder="No. of Years…" readonly>
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" [(ngModel)]="years">
+      </div>
+    </div>
+    <div class="row" style="width:70%; margin-left: 15%; margin-top: 1%;">
+        <div class="col">
+            <input class="form-control" type="text" placeholder="Total Investment Amount" readonly>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" [(ngModel)]="amount">
+          </div>
+    </div>
+    <div class="row" style="width:70%; margin-left: 15%; margin-top: 1%;">
+        <div class="col">
+            <input class="form-control" type="text" placeholder="Months" readonly>
+          </div>
+          <div class="col">
+            <select class="form-select" aria-label="Default select example" (input)="selectChangeHandler($event)">
+                <option selected>Select No. of Months</option>
+                <option value=12>1 Year</option>
+                <option value=6>6 Months</option>
+                <option value=3>3 Months</option>
+             </select>
+          </div>
+    </div>
+    <div class="row" style="width:70%; margin-left: 45%; margin-top: 1%;">
+        <div class="col">
+            <input type="button" class="btn btn-danger" value="Calculate" (click)="CalculateIntrest()">
+          </div>
+    </div>
+    <div [hidden]="ishide">
+    <div class="row" style="width:70%; margin-left: 15%;margin-top: 1%;">
+        <div class="col">
+          <input class="form-control" type="text" placeholder="Installment Amount" readonly>
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" [(ngModel)]="installmentAmount" readonly>
+        </div>
+      </div>
+      <div class="row" style="width:70%; margin-left: 15%; margin-top: 1%;">
+          <div class="col">
+              <input class="form-control" type="text" placeholder="Interest Amount" readonly>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" [(ngModel)]="intrestAmount" readonly>
+            </div>
+      </div>
+      <div class="row" style="width:70%; margin-left: 15%; margin-top: 1%;">
+          <div class="col">
+              <input class="form-control" type="text" placeholder="Total Amount" readonly>
+          </div>
+            <div class="col">
+                <input type="text" class="form-control" [(ngModel)]="totalAmount" readonly>
+            </div>
+      </div>
+    </div>
