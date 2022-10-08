@@ -1,11 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\bin\\Debug\\net6.0",
-    "\\bin\\Release\\net6.0",
+    "\\CommonLibrary",
+    "\\CommonLibrary\\Enums",
+    "\\Controllers",
     "\\Models",
-    "\\obj\\Release",
-    "\\obj\\Release\\net6.0"
+    "\\Repositories"
   ],
   "SelectedNode": "\\Models\\UserContext.cs",
   "PreviewInSolutionExplorer": false

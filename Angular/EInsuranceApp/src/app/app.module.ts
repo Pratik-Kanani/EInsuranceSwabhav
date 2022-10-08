@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { ViewCommisionWithdrawalsComponent } from './view-commision-withdrawals/view-commision-withdrawals.component';
 import { ViewAgentComponent } from './view-agent/view-agent.component';
+import { ChildPlanComponent } from './child-plan/child-plan.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ViewAgentComponent } from './view-agent/view-agent.component';
     LoginComponent,
     AdminHomeComponent,
     ViewCommisionWithdrawalsComponent,
-    ViewAgentComponent
+    ViewAgentComponent,
+    ChildPlanComponent
   ],
   imports: [
     BrowserModule,
