@@ -1,4 +1,4 @@
-<p style="text-align:center;">Intrest Calculator</p>
+<h3 style="text-align:center;">Interest Calculator</h3>
     <div class="row" style="width:70%; margin-left: 15%;">
       <div class="col">
         <input class="form-control" type="text" placeholder="No. of Years…" readonly>
@@ -33,27 +33,29 @@
             <input type="button" class="btn btn-danger" value="Calculate" (click)="CalculateIntrest()">
           </div>
     </div>
+    <div [hidden]="ishide">
     <div class="row" style="width:70%; margin-left: 15%;margin-top: 1%;">
         <div class="col">
           <input class="form-control" type="text" placeholder="Installment Amount" readonly>
         </div>
         <div class="col">
-          <input type="text" class="form-control" [(ngModel)]="installmentAmount">
+          <input type="text" class="form-control" [(ngModel)]="installmentAmount" readonly>
         </div>
       </div>
       <div class="row" style="width:70%; margin-left: 15%; margin-top: 1%;">
           <div class="col">
-              <input class="form-control" type="text" placeholder="Intrest Amount" readonly>
+              <input class="form-control" type="text" placeholder="Interest Amount" readonly>
             </div>
             <div class="col">
-              <input type="text" class="form-control" [(ngModel)]="intrestAmount">
+              <input type="text" class="form-control" [(ngModel)]="intrestAmount" readonly>
             </div>
       </div>
       <div class="row" style="width:70%; margin-left: 15%; margin-top: 1%;">
           <div class="col">
               <input class="form-control" type="text" placeholder="Total Amount" readonly>
-            </div>
+          </div>
             <div class="col">
-                <input type="text" class="form-control" [(ngModel)]="totalAmount">
-              </div>
+                <input type="text" class="form-control" [(ngModel)]="totalAmount" readonly>
+            </div>
       </div>
+    </div>

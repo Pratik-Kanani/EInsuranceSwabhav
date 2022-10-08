@@ -12,7 +12,8 @@ export class IntrestCalculatorComponent implements OnInit {
   intrestAmount:number
   totalAmount:number
   months:number
-  intrest:number
+  intrestRate:number
+  ishide:boolean
   constructor() {
     this.years = 0;
     this.amount = 0;
@@ -20,7 +21,8 @@ export class IntrestCalculatorComponent implements OnInit {
     this.intrestAmount=0;
     this.totalAmount=0;
     this.months = 0;
-    this.intrest = 6/100;
+    this.intrestRate = 15;
+    this.ishide = true;
     
   }
   selectChangeHandler(event: any) {
@@ -29,9 +31,12 @@ export class IntrestCalculatorComponent implements OnInit {
     console.log(this.months);
   }
   CalculateIntrest(){
+    if(this.amount!=0 && this.years!=0 && this.months!=0)
+    {
+      this.ishide = false;
     if(this.months == 12)
     {
-      this.installmentAmount = this.amount/this.years;
+      this.installmentAmount = parseInt((this.amount/this.years).toFixed(2));
     }
     if(this.months == 6)
     {
@@ -41,7 +46,11 @@ export class IntrestCalculatorComponent implements OnInit {
     {
       this.installmentAmount = this.amount/(this.years*4);
     }
-
+    var interestPerYear = (this.amount * this.intrestRate)/100;
+    var monthlyInterest = interestPerYear/12;
+    this.intrestAmount = monthlyInterest*this.years;
+    this.totalAmount = parseInt(this.intrestAmount.toString()) + parseInt(this.amount.toString());
+   }
   }
   ngOnInit(): void {
     
