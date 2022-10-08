@@ -11,6 +11,7 @@ import { ViewCommisionWithdrawalsComponent } from './view-commision-withdrawals/
 import { ViewAgentComponent } from './view-agent/view-agent.component';
 import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
 import { CustomerDashboardComponent } from './customer-dashboard/customer-dashboard.component';
+import { AgentDashboardComponent } from './agent-dashboard/agent-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CustomerDashboardComponent } from './customer-dashboard/customer-dashbo
     ViewCommisionWithdrawalsComponent,
     ViewAgentComponent,
     EmployeeDashboardComponent,
-    CustomerDashboardComponent
+    CustomerDashboardComponent,
+    AgentDashboardComponent
   ],
   imports: [
     BrowserModule,
