@@ -12,6 +12,7 @@ import { ViewCommisionWithdrawalsComponent } from './view-commision-withdrawals/
 import { ViewAgentComponent } from './view-agent/view-agent.component';
 import { AddAgentComponent } from './add-agent/add-agent.component';
 import { CustomerDashboardComponent } from './customer-dashboard/customer-dashboard.component';
+import { AgentDashboardComponent } from './agent-dashboard/agent-dashboard.component';
 import { IntrestCalculatorComponent } from './intrest-calculator/intrest-calculator.component';
 
 @NgModule({
@@ -25,7 +26,8 @@ import { IntrestCalculatorComponent } from './intrest-calculator/intrest-calcula
     ViewAgentComponent,
     CustomerDashboardComponent,
     AddAgentComponent,
-    IntrestCalculatorComponent
+    IntrestCalculatorComponent,
+    AgentDashboardComponent
   ],
   imports: [
     BrowserModule,
