@@ -14,6 +14,7 @@ namespace EInsuranceAPI.Controllers
             _customerRepository = customerRepository;
         }
 
+
         [HttpGet]
         [Route("allcustomers")]
         [ProducesResponseType(200)]
@@ -24,10 +25,17 @@ namespace EInsuranceAPI.Controllers
             var customer = _customerRepository.GetAllCustomers().First();
             CustomerDTO customerResponse = new CustomerDTO()
             {
-                FirstName = customer.FirstName,
-                Lastname = customer.LastName
+                FirstName = customer.Name,
+                Lastname = customer.Email
             };
             return Ok(customerResponse);
+        }
+        [HttpPost]
+        [Route("allcustomers")]
+        public async Task<IActionResult> AddCustomers([FromBody] Customer customer)
+        {
+            _customerRepository.AddCustomer(customer);
+            return Ok(customer);
         }
     }
 }

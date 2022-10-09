@@ -6,8 +6,6 @@ using Microsoft.EntityFrameworkCore;
 namespace EInsuranceAPI.Controllers
 {
     [ApiController]
-
-   
     public class AgentsController : Controller
     {
         private readonly IAgentRepository _agentRepository;

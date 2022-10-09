@@ -9,5 +9,6 @@ namespace EInsuranceAPI.Repositories
     public interface ICustomerRepository
     {
         IEnumerable<Customer> GetAllCustomers();
+        Customer AddCustomer(Customer customer);
     }
 }
