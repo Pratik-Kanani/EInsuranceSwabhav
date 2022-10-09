@@ -17,6 +17,7 @@ import { CustomerProfileComponent } from './customer-profile/customer-profile.co
 import { CustomerDocumentComponent } from './customer-document/customer-document.component';
 import { AgentDashboardComponent } from './agent-dashboard/agent-dashboard.component';
 import { IntrestCalculatorComponent } from './intrest-calculator/intrest-calculator.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { IntrestCalculatorComponent } from './intrest-calculator/intrest-calcula
     AgentDashboardComponent,
     AgentProfileComponent,
     CustomerProfileComponent,
-    CustomerDocumentComponent
+    CustomerDocumentComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,
