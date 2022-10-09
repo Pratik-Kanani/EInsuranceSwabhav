@@ -13,6 +13,8 @@ import { AgentDashboardComponent } from './agent-dashboard/agent-dashboard.compo
 import { ViewCommisionWithdrawalsComponent } from './view-commision-withdrawals/view-commision-withdrawals.component';
 import { CustomerRegistrationComponent } from './customer-registration/customer-registration.component';
 import { ViewInsuranceAccountDetailComponent } from './view-insurance-account-detail/view-insurance-account-detail.component';
+import { InsuranceAccountDetailByIdComponent } from './insurance-account-detail-by-id/insurance-account-detail-by-id.component';
+import { ViewFeedbackComponent } from './view-feedback/view-feedback.component';
 
 const routes: Routes = [
   {path : '',component :HomeComponent},
@@ -29,6 +31,8 @@ const routes: Routes = [
   {path : 'agent-dashbord',component:AgentDashboardComponent},
   {path :'view-commision-withdrawals',component:ViewCommisionWithdrawalsComponent},
   {path :'customer-registration',component:CustomerRegistrationComponent},
+  {path:'detailById',component:InsuranceAccountDetailByIdComponent},
+  {path:'feedback',component:ViewFeedbackComponent},
 
   
 ];

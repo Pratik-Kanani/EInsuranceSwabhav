@@ -24,6 +24,9 @@ import { CustomerRegistrationComponent } from './customer-registration/customer-
 import { AddingInsurancePlanComponent } from './adding-insurance-plan/adding-insurance-plan.component';
 import { ViewInsuranceAccountDetailComponent } from './view-insurance-account-detail/view-insurance-account-detail.component';
 import { InsuranceAccountDetailByIdComponent } from './insurance-account-detail-by-id/insurance-account-detail-by-id.component';
+import { ViewFeedbackComponent } from './view-feedback/view-feedback.component';
+import { CEnquiryComponent } from './c-enquiry/c-enquiry.component';
+import { CustomerEnquiryComponent } from './customer-enquiry/customer-enquiry.component';
 
 
 @NgModule({
@@ -47,7 +50,10 @@ import { InsuranceAccountDetailByIdComponent } from './insurance-account-detail-
     AddingInsurancePlanComponent,
     CustomerDashboardComponent,
     ViewInsuranceAccountDetailComponent,
-    InsuranceAccountDetailByIdComponent
+    InsuranceAccountDetailByIdComponent,
+    ViewFeedbackComponent,
+    CEnquiryComponent,
+    CustomerEnquiryComponent
   ],
   imports: [
     BrowserModule,
