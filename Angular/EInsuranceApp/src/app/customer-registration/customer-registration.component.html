@@ -1,0 +1,81 @@
+<div class="container my-5">
+    <h2 class="mb-3">CUSTOMER REGISTRATION</h2>
+    
+    <form #form="ngForm" >
+       
+        <div class="mb-3">
+            <label for="name">Customer Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name" 
+            name="name" [(ngModel)]="addCustomerReguest.name">
+        </div>
+
+        <div class="mb-3">
+            <label for="code">Date of Birth</label>
+            <input type="date" class="form-control" id="dob" placeholder="Select DOB" 
+            name="dob" [(ngModel)]="addCustomerReguest.dob">
+        </div>
+
+        <div class="mb-3">
+            <label for="name">Login ID</label>
+            <input type="text" class="form-control" id="login_id" placeholder="Enter login id" 
+            name="login_id" [(ngModel)]="addCustomerReguest.login_id">
+        </div>
+
+        <div class="mb-3">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="Enter address"
+            name="address" [(ngModel)]="addCustomerReguest.address">
+        </div>
+        <div class="mb-3">
+            <label for="email">Email Id</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email"
+            name="email" [(ngModel)]="addCustomerReguest.email">
+        </div>
+        <div class="mb-3">
+            <label for="state">State</label>
+            <input type="text" class="form-control" id="state" placeholder="Select State" 
+            name="state" [(ngModel)]="addCustomerReguest.state">
+        </div>
+        <div class="mb-3">
+            <label for="city">City</label>
+            <input type="text" class="form-control" id="city" placeholder="Select city" 
+            name="city" [(ngModel)]="addCustomerReguest.city">
+        </div>
+        <div class="mb-3">
+            <label for="pincode">Pincode</label>
+            <input type="text" class="form-control" id="pincode" placeholder="Enter pincode" 
+            name="pincode" [(ngModel)]="addCustomerReguest.pincode">
+        </div>
+        <div class="mb-3">
+            <label for="mobile">Mobile No.</label>
+            <input type="text" class="form-control" id="mobile" placeholder="Enter mobile no" 
+            name="mobile" [(ngModel)]="addCustomerReguest.mobile">
+        </div>
+        <div class="mb-3">
+            <label for="nominee">Nominee</label>
+            <input type="text" class="form-control" id="nominee" placeholder="Enter nominee" 
+            name="nominee" [(ngModel)]="addCustomerReguest.nominee">
+        </div>
+        
+        <div class="mb-3">
+            <label for="nominee_relation">Nominee Relation</label><br>
+
+            <input type="radio" id="father" name="nominee_relation" value="father"
+            name="nominee_relation" [(ngModel)]="addCustomerReguest.nominee_relation">
+            <label for="father">Father</label><br>
+
+            <input type="radio" id="mother" name="nominee_relation" value="mother"
+            name="nominee_relation" [(ngModel)]="addCustomerReguest.nominee_relation">
+            <label for="mother">Mother</label><br>
+
+            <input type="radio" id="brother" name="nominee_relation" value="brother"
+            name="nominee_relation" [(ngModel)]="addCustomerReguest.nominee_relation">
+            <label for="brother">Brother</label><br>
+
+            <input type="radio" id="sister" name="nominee_relation" value="sister"
+            name="nominee_relation" [(ngModel)]="addCustomerReguest.nominee_relation">
+            <label for="sister">Sister</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

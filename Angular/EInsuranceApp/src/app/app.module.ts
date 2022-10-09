@@ -19,6 +19,7 @@ import { AgentDashboardComponent } from './agent-dashboard/agent-dashboard.compo
 import { IntrestCalculatorComponent } from './intrest-calculator/intrest-calculator.component';
 import { AgentService } from './services/agent.service';
 import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
+import { CustomerRegistrationComponent } from './customer-registration/customer-registration.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http'
     AgentDashboardComponent,
     AgentProfileComponent,
     CustomerProfileComponent,
-    CustomerDocumentComponent
+    CustomerDocumentComponent,
+    CustomerRegistrationComponent
   ],
   imports: [
     BrowserModule,
