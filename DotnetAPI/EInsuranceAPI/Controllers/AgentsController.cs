@@ -18,7 +18,9 @@ namespace EInsuranceAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GettAllAgents()
         {
+            
             var agents = _agentRepository.GetAllAgents();
+            if(agents == null) return NotFound();
             return Ok(agents);
         }
         [HttpPost]
@@ -34,6 +36,9 @@ namespace EInsuranceAPI.Controllers
             _agentRepository.UpdateAgent(agent);
             return Ok(agent);
         }
+
+        [HttpDelete]
+        [Route("agents")]
         public async Task<IActionResult> DeleteAgent([FromBody] Agent agent)
         {
             _agentRepository.DeleteAgent(agent);
