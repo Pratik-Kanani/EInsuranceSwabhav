@@ -10,6 +10,7 @@ import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { ViewCommissionComponent } from './Agent/view-commission/view-commission.component';
 import { ViewCommisionWithdrawalsComponent } from './view-commision-withdrawals/view-commision-withdrawals.component';
 import { ViewAgentComponent } from './view-agent/view-agent.component';
+import { AgentProfileComponent } from './agent-profile/agent-profile.component';
 import { AddAgentComponent } from './add-agent/add-agent.component';
 import { CustomerDashboardComponent } from './customer-dashboard/customer-dashboard.component';
 import { AgentDashboardComponent } from './agent-dashboard/agent-dashboard.component';
@@ -27,7 +28,8 @@ import { IntrestCalculatorComponent } from './intrest-calculator/intrest-calcula
     CustomerDashboardComponent,
     AddAgentComponent,
     IntrestCalculatorComponent,
-    AgentDashboardComponent
+    AgentDashboardComponent,
+    AgentProfileComponent
   ],
   imports: [
     BrowserModule,

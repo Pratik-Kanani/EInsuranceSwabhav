@@ -1,0 +1,95 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color : blue;">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-brand">
+                    <a class="nav-link active" style="color: white;" aria-current="page" routerLink="/home">
+                    <img src="assets/homelogo.jpg" id="image" width="150" height="50"/></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"
+                     routerLink="/home" style="color: white;" ></a>
+                </li>
+              
+            </ul>  
+        </div>
+    </div>
+</nav>
+<br><br><br>
+<h1 class="text-center">{{title}}</h1>
+<div class="container">
+    <form>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="row">Agent Name:</th>
+                    <td><input type="text" style="width: 97%;" value="{{agentName}}"/></td>
+                    
+                  </tr>
+                  <tr>
+                    <th scope="row">Login Id:</th>
+                    <td><input type="text" style="width: 97%;"value="{{loginId}}"/></td>
+                    
+                  </tr>
+                  <tr>
+                    <th scope="row">Date Of Birth:</th>
+                    <td><input type="text" style="width: 97%;"value="{{dateOfBirth}}"/></td>
+                    
+                  </tr>
+                  <tr>
+                    <th scope="row">Address </th>
+                    <td><textarea rows="3" cols="140"value="{{address}}" >  
+                          
+                        </textarea></td>
+                    
+                  </tr>
+                  <tr>
+                    <th scope="row">Email id:</th>
+                    <td><input type="text"value="{{emailId}}" style="width: 97%;"/></td>
+                    
+                  </tr>
+                  <tr>
+                    <th scope="row">State:</th>
+                    <select  style="width: 96%; ">
+                        <option selected="selected" value="{{state}}">Maharastra</option>
+                        <option value="{{state}}">Karnataka</option>
+                         <option value="{{state}}">Orrisa</option>
+                         <option value="{{state}}">Kerala</option>
+                         <option value="{{state}}">Madhya Pradesh</option>
+                    
+                    </select>
+                  </tr>
+                  <tr>
+                    <th scope="row">City:</th>
+                    <select style="width: 96%; ;">
+                        <option selected="selected" value="one">pune</option>
+                        
+                    
+                    </select>
+                  </tr>
+                  <tr>
+                    <th scope="row">Pin Code:</th>
+                    <td><input type="text" style="width: 97%;"value="{{pinCode}}"/></td>
+                    
+                  </tr>
+                  <tr>
+                    <th scope="row">Mobole No:</th>
+                    <td><input type="text" style="width: 97%;"value="{{mobileNumber}}"/></td>
+                    
+                  </tr>
+
+
+            </thead>
+           
+
+        </table>
+        <div class="container">
+            <input type="submit" value="Submit" style="margin: 0;
+            position: absolute;
+            top: 90%;
+            left: 50%;background-color: red;height: 5%;width: 10%;"/>
+        </div>
+    </form>
+</div>     
