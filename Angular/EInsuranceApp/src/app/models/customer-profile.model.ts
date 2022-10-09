@@ -1,4 +1,4 @@
-export interface AgentProfile {
+export interface CustomerProfile {
     name: string;
     dob: string
     id:string

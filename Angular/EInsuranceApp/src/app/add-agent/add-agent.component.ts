@@ -13,8 +13,9 @@ export class AddAgentComponent implements OnInit {
   addAgentRequest:Agent={
     id: '',
     name: '',
-    username: '',
+    code: '',
     password: '',
+    confirm_password: '',
     address: '',
     email: '',
     qualification: '',

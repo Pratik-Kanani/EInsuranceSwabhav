@@ -26,26 +26,27 @@
                     <tr>
                         <th>Agent id</th>
                         <th>Agent Name</th>
-                        <th>Agent UserName</th>
+                        <th>Agent Code</th>
                         <th>Address</th>
                         <th>Email-id</th>
                         <th>Qualification</th>
                         <th>Status</th>
                         <th>Action</th>
-                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody>
                    <tr *ngFor="let agent of agents">
                         <td>{{agent.id}}</td>
                         <td>{{agent.name}}</td>
-                        <td>{{agent.username}}</td>
+                        <td>{{agent.code}}</td>
                         <td>{{agent.address}}</td>
                         <td>{{agent.email}}</td>
                         <td>{{agent.qualification}}</td>
                         <td>{{agent.status}}</td>                        
-                        <td></td>
-                        <td></td>
+                        <td>
+                            <a href="">Edit</a>
+                            <a href="">Delete</a>
+                        </td>
                     </tr>      
                 </tbody>
             </table>           
