@@ -1,0 +1,51 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color : blue;">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-brand">
+                    <a class="nav-link active" style="color: white;" aria-current="page" routerLink="/home">
+                    <img src="assets/homelogo.jpg" id="image" width="150" height="50"/></a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page"
+                     routerLink="/home" style="color: white;" ></a>
+                </li>
+              
+            </ul>  
+        </div>
+    </div>
+</nav>
+<br><br><br>
+    <h2 class="text-center">{{title}}</h2>
+    <br><br>
+    <div class="container">
+        <form> 
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Agent id</th>
+                        <th>Agent Name</th>
+                        <th>Address</th>
+                        <th>Email-id</th>
+                        <th>Qualification</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                        <td>{{id}}</td>
+                        <td>{{name}}</td>
+                        <td>{{address}}</td>
+                        <td>{{email}}</td>
+                        <td>{{qualification}}</td>
+                        <td *ngIf="status===true">Active</td>
+                        <td *ngIf="status===false">Inactive</td>
+                        <td><a href="">Edit</a> | <input type="submit" value="Delete" onclick="deleterow()"></td>
+                    </tr>      
+                </tbody>
+            </table>
+        </form>
+    </div>

@@ -13,6 +13,8 @@ import { ViewAgentComponent } from './view-agent/view-agent.component';
 import { CustomerDashboardComponent } from './customer-dashboard/customer-dashboard.component';
 import { CustomerProfileComponent } from './customer-profile/customer-profile.component';
 import { CustomerDocumentComponent } from './customer-document/customer-document.component';
+import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
+import { EmpViewAgentComponent } from './emp-view-agent/emp-view-agent.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { CustomerDocumentComponent } from './customer-document/customer-document
     ViewAgentComponent,
     CustomerDashboardComponent,
     CustomerProfileComponent,
-    CustomerDocumentComponent
+    CustomerDocumentComponent,
+    EmployeeDashboardComponent,
+    EmpViewAgentComponent
   ],
   imports: [
     BrowserModule,
