@@ -28,6 +28,7 @@ const routes: Routes = [
   {path :'view-commision-withdrawals',component:ViewCommisionWithdrawalsComponent},
   {path :'customer-registration',component:CustomerRegistrationComponent},
   {path: 'add-agent',component:AddAgentComponent}
+  
 ];
 
 @NgModule({

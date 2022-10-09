@@ -18,13 +18,14 @@ namespace EInsuranceAPI.Models
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Agent> Agents {get;set;}
         public DbSet<Customer> Customers {get;set;}
-        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        // {
-        //     if (!optionsBuilder.IsConfigured)
-        //     {
-        //         optionsBuilder.UseSqlServer(@"Server=.\SQLExpress;Database=EInsuranceApp;Integrated Security=SSPI");
-        //     }
-        // }
+        public DbSet<InsurancePlan> InsurancePlans { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseSqlServer(@"Server=.\SQLExpress;Database=EInsuranceApp;Integrated Security=SSPI");
+            }
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

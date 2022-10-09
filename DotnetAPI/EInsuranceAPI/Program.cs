@@ -24,6 +24,7 @@ builder.Services.AddScoped<ICustomerRepository,CustomerRepository>();
 builder.Services.AddScoped<IAgentRepository,AgentRepository>();
 // builder.Services.AddDbContextPool<UserContext>
 // (x => x.UseSqlServer(connectionString, b=> b.MigrationsAssembly))
+builder.Services.AddScoped<IInsuranceRepository, InsuranceRepository>();
 
 var app = builder.Build();
 

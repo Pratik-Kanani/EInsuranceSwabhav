@@ -16,7 +16,7 @@ export class AgentService {
     return this.http.get<Agent[]>(this.baseApiUrl+'/agents');
   }
   addAgent(addAgentRequest:Agent):Observable<Agent>{
-    addAgentRequest.id='00000000-0000-0000-0000-000000000000';
+    //addAgentRequest.id ='00000000-0000-0000-0000-000000000000';
     return this.http.post<Agent>(this.baseApiUrl+'/agents',addAgentRequest);
   }
 }

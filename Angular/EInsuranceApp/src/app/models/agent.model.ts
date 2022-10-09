@@ -1,5 +1,5 @@
 export interface Agent{
-id:string;    
+id:number;    
 name:string;
 code:string;
 password:string;
