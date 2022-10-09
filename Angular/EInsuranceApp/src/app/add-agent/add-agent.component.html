@@ -1,6 +1,6 @@
 <p>add-agent works!</p>
 <div class="container my-5">
-    <h1 class="mb-3">Add New Agent</h1>
+    <h1 class="mb-3">AGENT REGISTRATION</h1>
     
     <form #form="ngForm" (ngSubmit)="addAgent()">
        
@@ -10,14 +10,20 @@
             name="name" [(ngModel)]="addAgentRequest.name">
         </div>
         <div class="mb-3">
-            <label for="username">User Name</label>
-            <input type="text" class="form-control" id="username" placeholder="Enter user name"
-            name="username" [(ngModel)]="addAgentRequest.username">
+            <label for="code">Code</label>
+            <input type="text" class="form-control" id="code" placeholder="Enter code" 
+            name="code" [(ngModel)]="addAgentRequest.code">
         </div>
+        
         <div class="mb-3">
             <label for="password">Password</label>
             <input type="password" class="form-control" id="password" placeholder="Enter password"
             name="password" [(ngModel)]="addAgentRequest.password">
+        </div>
+        <div class="mb-3">
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" class="form-control" id="confirm_password" placeholder="Confirm password"
+            name="confirm_password" [(ngModel)]="addAgentRequest.confirm_password">
         </div>
         <div class="mb-3">
             <label for="address">Address</label>
@@ -43,6 +49,6 @@
             name="status" [(ngModel)]="addAgentRequest.status">
             <label for="inactive">Inactive</label>
         </div>
-        <button type="submit" class="btn btn-primary">Add</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </div>

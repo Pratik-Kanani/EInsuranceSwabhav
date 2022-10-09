@@ -1,8 +1,9 @@
 export interface Agent{
 id:string;    
 name:string;
-username:string;
+code:string;
 password:string;
+confirm_password:string;
 address:string;
 email:string
 qualification:string;
