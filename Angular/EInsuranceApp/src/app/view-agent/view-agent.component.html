@@ -18,7 +18,7 @@
     </div>
 </nav>
 <br><br><br>
-    <h2 class="text-center">{{title}}</h2>
+   
     <div class="container">
         <form> 
             <table class="table table-bordered">
@@ -26,6 +26,7 @@
                     <tr>
                         <th>Agent id</th>
                         <th>Agent Name</th>
+                        <th>Agent UserName</th>
                         <th>Address</th>
                         <th>Email-id</th>
                         <th>Qualification</th>
@@ -35,17 +36,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                   <tr>
-                        <td>{{id}}</td>
-                        <td>{{name}}</td>
-                        <td>{{address}}</td>
-                        <td>{{email}}</td>
-                        <td>{{qualification}}</td>
-                        <td *ngIf="status===true">Active</td>
-                        <td *ngIf="status===false">Inactive</td>
-                        <td>
+                   <tr *ngFor="let agent of agents">
+                        <td>{{agent.id}}</td>
+                        <td>{{agent.name}}</td>
+                        <td>{{agent.username}}</td>
+                        <td>{{agent.address}}</td>
+                        <td>{{agent.email}}</td>
+                        <td>{{agent.qualification}}</td>
+                        <td>{{agent.status}}</td>                        
+                        <td></td>
+                        <td></td>
                     </tr>      
                 </tbody>
-            </table>
+            </table>           
         </form>
     </div>

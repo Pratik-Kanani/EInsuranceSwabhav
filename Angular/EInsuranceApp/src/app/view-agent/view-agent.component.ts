@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Agent } from 'app/models/agent.model';
+import { AgentService } from 'app/services/agent.service';
 
 @Component({
   selector: 'app-view-agent',
@@ -7,27 +9,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./view-agent.component.css']
 })
 export class ViewAgentComponent implements OnInit {
-  title : string;
-  id : number;
-  name : string;
-  address : string;
-  email : string;
-  qualification : string;
-  status : boolean;
 
-  constructor(private route: Router) {
-    this.title = "Agent Records"
-    this.id = 1
-    this.name ="Ram"
-    this.address = "Lucknow"
-    this.email = "abc@gmail.com"
-    this.qualification = "PG"
-   this.status = true
-   }
-
-  ngOnInit(): void {
-    
+  agents: Agent[] = [];
+  constructor(private route: Router, private agentService: AgentService) {
 
   }
 
+  ngOnInit(): void {
+    this.agentService.getAllAgents()
+      .subscribe({
+        next: (agents) => {this.agents=agents;},
+        error:(response)=>{
+          console.log(response);
+        }
+      })
+  }
 }

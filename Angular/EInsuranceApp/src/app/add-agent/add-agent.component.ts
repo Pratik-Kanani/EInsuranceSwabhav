@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Agent } from 'app/models/agent.model';
+import { AgentService } from 'app/services/agent.service';
+
 
 @Component({
   selector: 'app-add-agent',
@@ -7,9 +10,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddAgentComponent implements OnInit {
 
-  constructor() { }
+  addAgentRequest:Agent={
+    id: '',
+    name: '',
+    username: '',
+    password: '',
+    address: '',
+    email: '',
+    qualification: '',
+    status: false
+  };  
+  constructor(private agentService:AgentService) { }
 
   ngOnInit(): void {
   }
-
+  addAgent(){
+    this.agentService.addAgent(this.addAgentRequest)
+    .subscribe({
+      next:(agent)=>{
+        console.log(agent);
+      },
+      error:(response)=>{
+        console.log(response);
+      }
+    });
+  }
 }
