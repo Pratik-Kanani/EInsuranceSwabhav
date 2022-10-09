@@ -12,6 +12,7 @@ import { CustomerDocumentComponent } from './customer-document/customer-document
 import { AgentDashboardComponent } from './agent-dashboard/agent-dashboard.component';
 import { ViewCommisionWithdrawalsComponent } from './view-commision-withdrawals/view-commision-withdrawals.component';
 import { CustomerRegistrationComponent } from './customer-registration/customer-registration.component';
+import { ViewInsuranceAccountDetailComponent } from './view-insurance-account-detail/view-insurance-account-detail.component';
 
 const routes: Routes = [
   {path : '',component :HomeComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path : 'login', component : LoginComponent},
   {path : 'login', component : AdminHomeComponent},
   {path : 'view-agent', component : ViewAgentComponent},
+  {path: 'ViewAccountDetail',component:ViewInsuranceAccountDetailComponent},
   {path : 'add-agent',component:AddAgentComponent},
   {path :'agent-profile',component:AgentProfileComponent},
   {path :'customer-dashbotrd',component:CustomerDashboardComponent},
@@ -27,7 +29,7 @@ const routes: Routes = [
   {path : 'agent-dashbord',component:AgentDashboardComponent},
   {path :'view-commision-withdrawals',component:ViewCommisionWithdrawalsComponent},
   {path :'customer-registration',component:CustomerRegistrationComponent},
-  {path: 'add-agent',component:AddAgentComponent}
+
   
 ];
 

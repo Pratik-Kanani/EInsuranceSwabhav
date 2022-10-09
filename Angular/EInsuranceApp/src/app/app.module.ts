@@ -22,6 +22,8 @@ import { AgentService } from './services/agent.service';
 import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
 import { CustomerRegistrationComponent } from './customer-registration/customer-registration.component';
 import { AddingInsurancePlanComponent } from './adding-insurance-plan/adding-insurance-plan.component';
+import { ViewInsuranceAccountDetailComponent } from './view-insurance-account-detail/view-insurance-account-detail.component';
+import { InsuranceAccountDetailByIdComponent } from './insurance-account-detail-by-id/insurance-account-detail-by-id.component';
 
 
 @NgModule({
@@ -42,7 +44,10 @@ import { AddingInsurancePlanComponent } from './adding-insurance-plan/adding-ins
     CustomerDocumentComponent,
     CustomerRegistrationComponent,
     EmployeeDashboardComponent,
-    AddingInsurancePlanComponent
+    AddingInsurancePlanComponent,
+    CustomerDashboardComponent,
+    ViewInsuranceAccountDetailComponent,
+    InsuranceAccountDetailByIdComponent
   ],
   imports: [
     BrowserModule,
