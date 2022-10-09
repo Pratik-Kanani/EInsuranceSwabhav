@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using EInsuranceAPI.Models;
 using EInsuranceAPI.Repositories;
+using EInsuranceAPI.DTO;
 
 namespace EInsuranceAPI.Controllers
 {
@@ -19,7 +20,14 @@ namespace EInsuranceAPI.Controllers
         [ProducesResponseType(404)]
         public async Task<IActionResult> GetAllCustomers()
         {
-            return Ok(_customerRepository.GetAllCustomers());
+            
+            var customer = _customerRepository.GetAllCustomers().First();
+            CustomerDTO customerResponse = new CustomerDTO()
+            {
+                FirstName = customer.FirstName,
+                Lastname = customer.LastName
+            };
+            return Ok(customerResponse);
         }
     }
 }

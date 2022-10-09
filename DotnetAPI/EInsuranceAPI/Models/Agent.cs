@@ -1,4 +1,4 @@
-namespace EInsuranceAPI.Models
+﻿namespace EInsuranceAPI.Models
 {
     public class Agent
     {

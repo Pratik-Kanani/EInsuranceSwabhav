@@ -4,18 +4,18 @@ namespace EInsuranceAPI.Repositories
 {
     public class AgentRepository : IAgentRepository
     {
-        private readonly AgentDBContext _agentdbContext;
-        public AgentRepository(AgentDBContext agentdbContext)
+        private readonly EInsuranceAppContext _context;
+        public AgentRepository(EInsuranceAppContext context)
         {
-            _agentdbContext = agentdbContext;
+            _context = context;
         }
 
         public Agent AddAgent(Agent agent)
         {
             if(agent != null)
             {
-                _agentdbContext.Agents.Add(agent);
-                _agentdbContext.SaveChanges();
+                _context.Agents.Add(agent);
+                _context.SaveChanges();
                 return agent;
             }
             return null;
@@ -23,12 +23,12 @@ namespace EInsuranceAPI.Repositories
 
         public IEnumerable<Agent> GetAllAgents()
         {
-            return _agentdbContext.Agents.ToList();
+            return _context.Agents.ToList();
         }
 
         public Agent GetAgentById(int AgentId)
         {
-            return _agentdbContext.Agents.Find(AgentId);
+            return _context.Agents.Find(AgentId);
         }
         public Agent UpdateAgent(Agent agent)
         {
@@ -41,8 +41,8 @@ namespace EInsuranceAPI.Repositories
 
         public void DeleteAgent(Agent agent)
         {
-            _agentdbContext.Agents.Remove(agent);
-            _agentdbContext.SaveChanges();
+            _context.Agents.Remove(agent);
+            _context.SaveChanges();
         }
     }
 }

@@ -24,7 +24,7 @@ namespace EInsuranceAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> AddAgents([FromBody] Agent agent)
         {
-            agent.ID = Guid.NewGuid();
+            //agent.ID = Guid.NewGuid();
             _agentRepository.AddAgent(agent);
             return Ok(agent);
         }
@@ -34,10 +34,10 @@ namespace EInsuranceAPI.Controllers
             _agentRepository.UpdateAgent(agent);
             return Ok(agent);
         }
-        /*public async Task<IActionResult> DeleteAgent([FromBody] Agent agent)
+        public async Task<IActionResult> DeleteAgent([FromBody] Agent agent)
         {
             _agentRepository.DeleteAgent(agent);
             return Ok();
-        }*/
+        }
     }
 }
