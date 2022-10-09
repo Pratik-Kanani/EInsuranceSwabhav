@@ -19,23 +19,36 @@
                         Customer Profile
                     </a>
                     <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="navbarScrollingDropdown">
-                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/customer-profile">Profile</a></li>
-                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/customer-document">Documents</a></li>
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/customer-profile">PROFFILE</a></li>
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/customer-document">DOCUMENTS</a></li>
                     </ul>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" routerLink="#" 
-                    style="color: white;">Insurance Plans</a>
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a class="nav-link active dropdown-toggle" id="ScrollingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false"
+                     ngbDropdownToggle style="color: white;">Insurance Plans</a>
+
+                     <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="ScrollingDropdown">
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/protection-plans">PROTECTION PLANS</a></li>
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/child-plans">CHILD PLANS</a></li>
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/growth-plans">GROWTH PLANS</a></li>
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/group-plans">GROUP PLANS</a></li>
+                    </ul>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link active" routerLink="/view-insurance-account-detail" 
                     style="color: white;">Insurance Account</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" routerLink="/Queries" 
-                    style="color: white;">Queries</a>
+                <li class="nav-item dropdown" ngbDropdown>
+                    <a class="nav-link active " id="QueriesScrollingDropdown" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false"
+                     ngbDropdownToggle style="color: white;">Queries</a>
+                    <ul class="dropdown-menu" ngbDropdownMenu aria-labelledby="QueriesScrollingDropdown">
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/enquiry">ENQUIRY</a></li>
+                        <li ngbDropdownItem><a class="dropdown-item" routerLink="/view-feeddback">VIEW FEEDBACK</a></li>
+                    </ul>
                 </li>
 
                 <li class="nav- ">

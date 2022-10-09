@@ -15,6 +15,8 @@ import { AddAgentComponent } from './add-agent/add-agent.component';
 import { CustomerDashboardComponent } from './customer-dashboard/customer-dashboard.component';
 import { CustomerProfileComponent } from './customer-profile/customer-profile.component';
 import { CustomerDocumentComponent } from './customer-document/customer-document.component';
+import { EmployeeDashboardComponent } from './employee-dashboard/employee-dashboard.component';
+import { EmpViewAgentComponent } from './emp-view-agent/emp-view-agent.component';
 import { AgentDashboardComponent } from './agent-dashboard/agent-dashboard.component';
 import { IntrestCalculatorComponent } from './intrest-calculator/intrest-calculator.component';
 import { AgentService } from './services/agent.service';
@@ -37,7 +39,9 @@ import { CustomerRegistrationComponent } from './customer-registration/customer-
     AgentProfileComponent,
     CustomerProfileComponent,
     CustomerDocumentComponent,
-    CustomerRegistrationComponent
+    CustomerRegistrationComponent,
+    EmployeeDashboardComponent,
+    EmpViewAgentComponent
   ],
   imports: [
     BrowserModule,
