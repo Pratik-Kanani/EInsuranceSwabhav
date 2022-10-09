@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore.Design;
 using EInsuranceAPI.Models;
 using EInsuranceAPI.CommonLibrary.Interfaces;
 using EInsuranceAPI.Repositories;
+using Microsoft.AspNetCore.Builder;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,7 @@ builder.Services.AddDbContext<AgentDBContext>(opt=>opt.UseSqlServer(connectionSt
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IUserRepository,UserRepository>();
+builder.Services.AddScoped<IAgentRepository,AgentRepository>();
 // builder.Services.AddDbContextPool<UserContext>
 // (x => x.UseSqlServer(connectionString, b=> b.MigrationsAssembly))
 
@@ -30,7 +32,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors(policy => policy.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
 app.UseAuthorization();
 
 app.MapControllers();
