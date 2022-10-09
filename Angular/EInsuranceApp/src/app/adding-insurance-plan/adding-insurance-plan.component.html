@@ -1,0 +1,87 @@
+<nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color:#1d4e9e;">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- Company logo -->
+                <li class="nav-brand">
+                    <a class="nav-link active" style="color: white;" aria-current="page" routerLink="#">
+                    <img id="image" src="assets/homelogo.jpg" width="150" height="50"/></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" style="color: white;" aria-current="page" routerLink ="/admin-home">Dashboard</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" style="color: white;" >Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div>
+    <h3 class = "text-center">{{title}}</h3>
+</div>
+
+
+<div class="container my-5">
+    <h1 class="mb-3">Add New Insurance</h1>
+    
+    <form #form="ngForm" (ngSubmit)="addInsurance()">
+       
+        <div class="mb-3">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter name" 
+            name="name" [(ngModel)]="addInsuranceRequest.name">
+        </div>
+        <div class="mb-3">
+            <label for="insuranceType">Insurance Type</label>
+            <input type="text" class="form-control" id="insuranceType" placeholder="Enter Insurance Type" 
+            name="insuranceType" [(ngModel)]="addInsuranceRequest.insuranceType">
+        </div>
+        <div class="mb-3">
+            <label for="policyTermmin">Policy Term Minimum</label>
+            <input type="text" class="form-control" id="policyTermmin" placeholder="Enter Policy Term Minimum"
+            name="policyTermmin" [(ngModel)]="addInsuranceRequest.policyTermmin">
+        </div>
+        <div class="mb-3">
+            <label for="policyTermmax">Policy Term Maximum</label>
+            <input type="text" class="form-control" id="policyTermmax" placeholder="Enter PloicyTerm Maximum"
+            name= "policyTermmax" [(ngModel)]="addInsuranceRequest.policyTermmax">
+        </div>
+        <div class="minimumAge">
+            <label for="minimumAge">Minimum Age</label>
+            <input type="text" class="form-control" id="minimumAge" placeholder="Enter MinimumAge"
+            name="minimumAge" [(ngModel)]="addInsuranceRequest.minimumAge">
+        </div>
+        <div class="mb-3">
+            <label for="maximumAge">maximum Age</label>
+            <input type="maximumAge" class="form-control" id="maximumAge" placeholder="Enter MaximumAge"
+            name="maximumAge" [(ngModel)]="addInsuranceRequest.maximumAge">
+        </div>
+        <div class="mb-3">
+            <label for="minimumInvestmentamount">Minimum Investment Amount</label>
+            <input type="text" class="form-control" id="minimumInvestmentAmoun" placeholder="Enter Minimum Investment Amount"
+            name="minimumInvestmentamount" [(ngModel)]="addInsuranceRequest.minimumInvestmentamount">
+        </div>
+        <div class="mb-3">
+            <label for="maximumInvestmentAmoun">Maximum Investment Amount</label>
+            <input type="text" class="form-control" id="maximumInvestmentAmoun" placeholder="Enter Maximum Investment Amount"
+            name="maximumInvestmentAmoun" [(ngModel)]="addInsuranceRequest.maximumInvestmentAmount">
+        </div>
+        <div class="mb-3">
+            <label for="profitPercentage">Profit Percentage</label>
+            <input type="text" class="form-control" id="profitPercentage" placeholder="Enter Profit Percentage"
+            name="profitPercentage" [(ngModel)]="addInsuranceRequest.profitPercentage">
+        </div>
+
+        <div class="mb-3">
+            <label for="newRegistrationcommission">New Registration Commision</label>
+            <input type="text" class="form-control" id="newRegistrationcommission" placeholder="Enter Registration Commision"
+            name="newRegistrationcommission" [(ngModel)]="addInsuranceRequest.newRegistrationcommission">
+        </div>
+        
+       
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

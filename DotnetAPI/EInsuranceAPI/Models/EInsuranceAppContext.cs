@@ -18,6 +18,7 @@ namespace EInsuranceAPI.Models
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Agent> Agents {get;set;}
         public DbSet<Customer> Customers {get;set;}
+        public DbSet<InsurancePlan> InsurancePlans { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

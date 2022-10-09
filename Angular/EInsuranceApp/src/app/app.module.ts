@@ -17,6 +17,9 @@ import { CustomerProfileComponent } from './customer-profile/customer-profile.co
 import { CustomerDocumentComponent } from './customer-document/customer-document.component';
 import { AgentDashboardComponent } from './agent-dashboard/agent-dashboard.component';
 import { IntrestCalculatorComponent } from './intrest-calculator/intrest-calculator.component';
+import { AddingInsurancePlanComponent } from './adding-insurance-plan/adding-insurance-plan.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -33,14 +36,16 @@ import { IntrestCalculatorComponent } from './intrest-calculator/intrest-calcula
     AgentDashboardComponent,
     AgentProfileComponent,
     CustomerProfileComponent,
-    CustomerDocumentComponent
+    CustomerDocumentComponent,
+    AddingInsurancePlanComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

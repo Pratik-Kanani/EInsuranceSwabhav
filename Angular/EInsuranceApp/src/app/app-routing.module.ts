@@ -12,6 +12,7 @@ const routes: Routes = [
   {path : 'login', component : AdminHomeComponent},
   {path : 'view-agent', component : ViewAgentComponent}
   
+  
 ];
 
 @NgModule({

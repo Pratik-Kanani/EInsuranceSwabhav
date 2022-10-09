@@ -7,7 +7,7 @@ namespace EInsuranceAPI.Controllers
 {
     [ApiController]
 
-    [Route("agents")]
+   
     public class AgentsController : Controller
     {
         private readonly IAgentRepository _agentRepository;
@@ -16,12 +16,14 @@ namespace EInsuranceAPI.Controllers
             _agentRepository = agentRepository;
         }
         [HttpGet]
+        [Route("agents")]
         public async Task<IActionResult> GettAllAgents()
         {
             var agents = _agentRepository.GetAllAgents();
             return Ok(agents);
         }
         [HttpPost]
+        [Route("agents")]
         public async Task<IActionResult> AddAgents([FromBody] Agent agent)
         {
             //agent.ID = Guid.NewGuid();
@@ -29,11 +31,14 @@ namespace EInsuranceAPI.Controllers
             return Ok(agent);
         }
         [HttpPut]
+        [Route("agents")]
         public async Task<IActionResult> UpdateAgent([FromBody] Agent agent)
         {
             _agentRepository.UpdateAgent(agent);
             return Ok(agent);
         }
+        [HttpDelete]
+        [Route("agents")]
         public async Task<IActionResult> DeleteAgent([FromBody] Agent agent)
         {
             _agentRepository.DeleteAgent(agent);

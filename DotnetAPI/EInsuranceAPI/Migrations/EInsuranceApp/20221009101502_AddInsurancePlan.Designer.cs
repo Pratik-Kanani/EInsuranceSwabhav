@@ -4,6 +4,7 @@ using EInsuranceAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EInsuranceAPI.Migrations.EInsuranceApp
 {
     [DbContext(typeof(EInsuranceAppContext))]
-    partial class EInsuranceAppContextModelSnapshot : ModelSnapshot
+    [Migration("20221009101502_AddInsurancePlan")]
+    partial class AddInsurancePlan
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -11,7 +11,7 @@ import { AgentService } from 'app/services/agent.service';
 export class AddAgentComponent implements OnInit {
 
   addAgentRequest:Agent={
-    id: '',
+    id: NaN,
     name: '',
     username: '',
     password: '',
