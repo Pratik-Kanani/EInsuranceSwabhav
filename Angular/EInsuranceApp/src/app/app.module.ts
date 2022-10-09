@@ -11,6 +11,8 @@ import { ViewCommissionComponent } from './Agent/view-commission/view-commission
 import { ViewCommisionWithdrawalsComponent } from './view-commision-withdrawals/view-commision-withdrawals.component';
 import { ViewAgentComponent } from './view-agent/view-agent.component';
 import { CustomerDashboardComponent } from './customer-dashboard/customer-dashboard.component';
+import { CustomerProfileComponent } from './customer-profile/customer-profile.component';
+import { CustomerDocumentComponent } from './customer-document/customer-document.component';
 
 
 @NgModule({
@@ -22,7 +24,9 @@ import { CustomerDashboardComponent } from './customer-dashboard/customer-dashbo
     ViewCommissionComponent,
     ViewCommisionWithdrawalsComponent,
     ViewAgentComponent,
-    CustomerDashboardComponent
+    CustomerDashboardComponent,
+    CustomerProfileComponent,
+    CustomerDocumentComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,55 @@
+<h2 style='text-align: center;'> CUSTOMER DOCUMENTS </h2>
+<p style="text-align: center;"> Upload the documents </p>
+<form>
+    <table border="2">
+        <tr>
+            <td>
+                Document Type :
+            </td>
+            <td>
+                <select name="documents">
+                    <option value="Select Document">Select Document</option>
+                    <option value="Aadhar Card">Aadhar Card</option>
+                    <option value="Voter Id ">Voter Id </option>
+                    <option value="Ration Card">Ration Card</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Document :
+            </td>
+            <td>
+                <input type="file" id="myFile" name="filename">
+            </td>
+        </tr>
+        <tr>
+            <input type="submit" value="Submit" style="background-color: red;color:yellow;margin-top:15%;margin-bottom:3%; margin-left: 70%;" >
+        </tr>
+    </table>
+</form>
+<br>
+<form>
+    <table border="2" id="my_table">
+        <tr>
+            <th>Document Type</th>
+            <th>Document Path</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Aadhar Card</td>
+            <td><a href="">Download</a></td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td>Voter Id</td>
+            <td><a href="">Download</a></td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+        </tr>
+        <tr>
+            <td>Ration Card</td>
+            <td><a href="">Download</a></td>
+            <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+        </tr>
+    </table>
+</form>

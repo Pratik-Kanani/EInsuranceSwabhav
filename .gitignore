@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+.DotnetAPI/EInsuranceAPI/bin/
+.DotnetAPI/EInsuranceAPI/obj/
