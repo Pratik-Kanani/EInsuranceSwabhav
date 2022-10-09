@@ -11,7 +11,7 @@ import { CustomerProfileComponent } from './customer-profile/customer-profile.co
 import { CustomerDocumentComponent } from './customer-document/customer-document.component';
 import { AgentDashboardComponent } from './agent-dashboard/agent-dashboard.component';
 import { ViewCommisionWithdrawalsComponent } from './view-commision-withdrawals/view-commision-withdrawals.component';
-import { AddAgentComponent } from './add-agent/add-agent.component';
+import { CustomerRegistrationComponent } from './customer-registration/customer-registration.component';
 
 const routes: Routes = [
   {path : '',component :HomeComponent},
@@ -25,11 +25,9 @@ const routes: Routes = [
   {path :'customer-profile',component:CustomerProfileComponent},
   {path :'customer-document',component:CustomerDocumentComponent},
   {path : 'agent-dashbord',component:AgentDashboardComponent},
-  {path :'view-commision-withdrawals',component:ViewCommisionWithdrawalsComponent}
-
-,
+  {path :'view-commision-withdrawals',component:ViewCommisionWithdrawalsComponent},
+  {path :'customer-registration',component:CustomerRegistrationComponent},
   {path: 'add-agent',component:AddAgentComponent}
-  
 ];
 
 @NgModule({

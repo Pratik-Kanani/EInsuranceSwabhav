@@ -1,7 +1,7 @@
-export interface CustomerProfile {
+export interface Customer {
     name: string;
     dob: string
-    id:string
+    login_id:string
     address: string;
     email: string;
     state:string;
