@@ -13,6 +13,8 @@ import { ViewAgentComponent } from './view-agent/view-agent.component';
 import { AgentProfileComponent } from './agent-profile/agent-profile.component';
 import { AddAgentComponent } from './add-agent/add-agent.component';
 import { CustomerDashboardComponent } from './customer-dashboard/customer-dashboard.component';
+import { CustomerProfileComponent } from './customer-profile/customer-profile.component';
+import { CustomerDocumentComponent } from './customer-document/customer-document.component';
 import { AgentDashboardComponent } from './agent-dashboard/agent-dashboard.component';
 import { IntrestCalculatorComponent } from './intrest-calculator/intrest-calculator.component';
 
@@ -29,7 +31,9 @@ import { IntrestCalculatorComponent } from './intrest-calculator/intrest-calcula
     AddAgentComponent,
     IntrestCalculatorComponent,
     AgentDashboardComponent,
-    AgentProfileComponent
+    AgentProfileComponent,
+    CustomerProfileComponent,
+    CustomerDocumentComponent
   ],
   imports: [
     BrowserModule,
