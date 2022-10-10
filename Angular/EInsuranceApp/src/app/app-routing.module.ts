@@ -15,6 +15,7 @@ import { CustomerRegistrationComponent } from './customer-registration/customer-
 
 const routes: Routes = [
   {path : '',component :HomeComponent},
+  {path : 'home',component :HomeComponent},
   {path : 'admin-home', component : AdminHomeComponent},
   {path : 'login', component : LoginComponent},
   {path : 'login', component : AdminHomeComponent},
