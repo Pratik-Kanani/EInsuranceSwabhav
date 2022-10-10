@@ -15,6 +15,7 @@ import { CustomerRegistrationComponent } from './customer-registration/customer-
 import { ViewInsuranceAccountDetailComponent } from './view-insurance-account-detail/view-insurance-account-detail.component';
 import { InsuranceAccountDetailByIdComponent } from './insurance-account-detail-by-id/insurance-account-detail-by-id.component';
 import { ViewFeedbackComponent } from './view-feedback/view-feedback.component';
+import { CustomerEnquiryComponent } from './customer-enquiry/customer-enquiry.component';
 
 const routes: Routes = [
   {path : '',component :HomeComponent},
@@ -33,6 +34,7 @@ const routes: Routes = [
   {path :'customer-registration',component:CustomerRegistrationComponent},
   {path:'detailById',component:InsuranceAccountDetailByIdComponent},
   {path:'feedback',component:ViewFeedbackComponent},
+  {path:'enquiry',component:CustomerEnquiryComponent},
 
   
 ];

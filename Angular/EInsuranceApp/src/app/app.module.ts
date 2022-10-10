@@ -25,7 +25,6 @@ import { AddingInsurancePlanComponent } from './adding-insurance-plan/adding-ins
 import { ViewInsuranceAccountDetailComponent } from './view-insurance-account-detail/view-insurance-account-detail.component';
 import { InsuranceAccountDetailByIdComponent } from './insurance-account-detail-by-id/insurance-account-detail-by-id.component';
 import { ViewFeedbackComponent } from './view-feedback/view-feedback.component';
-import { CEnquiryComponent } from './c-enquiry/c-enquiry.component';
 import { CustomerEnquiryComponent } from './customer-enquiry/customer-enquiry.component';
 
 
@@ -52,7 +51,6 @@ import { CustomerEnquiryComponent } from './customer-enquiry/customer-enquiry.co
     ViewInsuranceAccountDetailComponent,
     InsuranceAccountDetailByIdComponent,
     ViewFeedbackComponent,
-    CEnquiryComponent,
     CustomerEnquiryComponent
   ],
   imports: [
